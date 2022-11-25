@@ -1,3 +1,12 @@
+terraform {
+  cloud {
+    organization = "wwsubba"
+    workspaces {
+      name = "terraformscripts"
+    }
+  }
+}
+
 # Configure the Azure provider
 terraform {
   required_providers {
