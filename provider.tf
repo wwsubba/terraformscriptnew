@@ -1,5 +1,5 @@
 terraform {
-  required_version = "~> 1.2.0"
+  required_version = "~> 3.0"
   cloud {
     organization = "wwsubba12"
 
