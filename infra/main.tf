@@ -1,3 +1,3 @@
 module "api-cloud-keyvault" {
-  source = "modules/cloud_keyvault"
+  source = "./modules/cloud_keyvault"
 }
