@@ -1,7 +1,23 @@
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = ">=3.0.0"
+    }
+    azuread = {
+      source  = "hashicorp/azuread"
+      version = ">= 1.0"
+    }
+  }
+}
+
 provider "azurerm" {
   features {}
 }
 
+provider "azuread" {
+   features {}
+}
 
 resource "azurerm_key_vault" "kv1" {
   name                        = "testww1"
