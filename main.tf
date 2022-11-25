@@ -1,12 +1,3 @@
-terraform {
-  cloud {
-    organization = "wwsubba12"
-    workspaces {
-      name = "wwsubbaapiworkspace"
-    }
-  }
-}
-
 # Configure the Azure provider
 terraform {
   required_providers {
@@ -14,7 +5,6 @@ terraform {
       source  = "hashicorp/azurerm"
     }
   }
-
   required_version = ">= 1.1.0"
 }
 
