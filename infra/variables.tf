@@ -4,7 +4,7 @@ variable "resource_group_name" {
 }
 
 
-variable "tenant_id"
+variable "tenantid"
 {
   type        = string
   description = "azure tenant id"
