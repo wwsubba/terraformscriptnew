@@ -10,18 +10,4 @@ resource "azurerm_key_vault" "kv1" {
   purge_protection_enabled    = false
 
   sku_name = "standard"
-
-  access_policy {
-    key_permissions = [
-      "Get",
-    ]
-
-    secret_permissions = [
-      "Get",
-    ]
-
-    storage_permissions = [
-      "Get",
-    ]
-  }
 }
