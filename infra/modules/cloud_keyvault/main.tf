@@ -1,7 +1,3 @@
-terraform {
-  experiments = [module_variable_optional_attrs]
-}
-
 data "azuread_client_config" "current" {}
 
 resource "azurerm_key_vault" "kv1" {
