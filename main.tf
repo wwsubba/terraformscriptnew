@@ -16,7 +16,6 @@ provider "azurerm" {
 }
 
 provider "azuread" {
-   features {}
 }
 
 resource "azurerm_key_vault" "kv1" {
