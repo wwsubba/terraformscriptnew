@@ -17,4 +17,5 @@ terraform {
       source  = "hashicorp/azuread"
     }
   }
+}
 
