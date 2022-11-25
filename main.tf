@@ -2,7 +2,7 @@ terraform {
   cloud {
     organization = "wwsubba12"
     workspaces {
-      name = "wwsubbaworkspace"
+      name = "wwsubbaapiworkspace"
     }
   }
 }
@@ -12,7 +12,6 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "~> 3.0.2"
     }
   }
 
