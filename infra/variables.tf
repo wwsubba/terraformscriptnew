@@ -7,5 +7,5 @@ variable "resource_group_name" {
 variable "tenant_id"
 {
   type        = string
-  description = "azure resource group name"
+  description = "azure tenant id"
 }
