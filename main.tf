@@ -1,3 +1,23 @@
+terraform {
+  cloud {
+    organization = "wwsubba12"
+
+    workspaces {
+      name = "wwsubbaapiworkspace"
+    }
+  }
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = ">=3.0.0"
+    }
+    azuread = {
+      source  = "hashicorp/azuread"
+      version = ">= 1.0"
+    }
+  }
+}
+
 data "azuread_client_config" "current" {}
 
 resource "azurerm_key_vault" "kv1" {
